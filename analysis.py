@@ -1,7 +1,9 @@
 
 import csv
+import os
 from openpyxl import Workbook
 from openpyxl.styles import Font, PatternFill
+import matplotlib.pyplot as plt
 
 with open("data/ventas.csv", "r", encoding="utf-8") as archivo:
     lector = csv.DictReader(archivo)
@@ -325,3 +327,62 @@ libro.save("reports/reporte_ventas.xlsx")
 
 print("\nExcel exportado correctamente:")
 print("reports/reporte_ventas.xlsx")
+
+
+# Crear gráfica de ingresos por producto
+os.makedirs("reports", exist_ok=True)
+
+productos = list(ingresos_por_producto.keys())
+ingresos = list(ingresos_por_producto.values())
+
+plt.figure(figsize=(10, 6))
+plt.bar(productos, ingresos)
+plt.title("Ingresos por producto")
+plt.xlabel("Producto")
+plt.ylabel("Ingresos ($)")
+plt.xticks(rotation=25, ha="right")
+plt.tight_layout()
+
+plt.savefig("reports/ingresos_por_producto.png", dpi=300)
+plt.close()
+
+print("Gráfica guardada en reports/ingresos_por_producto.png")
+
+
+# Crear gráfica de ingresos mensuales
+meses = list(ingresos_por_mes.keys())
+ingresos_mensuales = list(ingresos_por_mes.values())
+
+plt.figure(figsize=(8, 5))
+plt.plot(meses, ingresos_mensuales, marker="o")
+plt.title("Evolución mensual de ingresos")
+plt.xlabel("Mes")
+plt.ylabel("Ingresos ($)")
+plt.grid(True, alpha=0.3)
+plt.tight_layout()
+
+plt.savefig("reports/ingresos_mensuales.png", dpi=300)
+plt.close()
+
+print("Gráfica guardada en reports/ingresos_mensuales.png")
+
+
+# Crear gráfica de ingresos por vendedor
+vendedores = list(ventas_por_vendedor.keys())
+
+ingresos_vendedores = [
+    datos["ingresos"]
+    for datos in ventas_por_vendedor.values()
+]
+
+plt.figure(figsize=(8, 5))
+plt.bar(vendedores, ingresos_vendedores)
+plt.title("Ingresos por vendedor")
+plt.xlabel("Vendedor")
+plt.ylabel("Ingresos ($)")
+plt.tight_layout()
+
+plt.savefig("reports/ingresos_por_vendedor.png", dpi=300)
+plt.close()
+
+print("Gráfica guardada en reports/ingresos_por_vendedor.png")

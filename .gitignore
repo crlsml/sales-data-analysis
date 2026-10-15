@@ -4,5 +4,8 @@ __pycache__/
 .venv/
 venv/
 .env
-reports/
+
+reports/*
+!reports/
+!reports/*.png
 *.xlsx
