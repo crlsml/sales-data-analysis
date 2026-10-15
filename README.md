@@ -1,12 +1,12 @@
-# Sales Data Analysis 📊
+# Sales Data Analysis 
 
 Proyecto de análisis de datos desarrollado con Python para transformar registros de ventas en indicadores comerciales y reportes visuales.
 
-## 🎯 Objetivo
+## Objetivo
 
 Analizar el comportamiento de las ventas para identificar los productos con mayores ingresos, comparar el desempeño comercial por vendedor y evaluar la evolución mensual.
 
-## 🛠️ Tecnologías utilizadas
+## Tecnologías utilizadas
 
 - **Python:** procesamiento y análisis de datos.
 - **CSV:** lectura de registros de ventas.
@@ -15,7 +15,7 @@ Analizar el comportamiento de las ventas para identificar los productos con mayo
 - **OpenPyXL:** generación de reportes de Excel.
 - **Git y GitHub:** control de versiones y publicación del proyecto.
 
-## 📈 Indicadores del análisis
+## Indicadores del análisis
 
 - Ingresos totales registrados.
 - Ingresos por producto.
@@ -24,7 +24,7 @@ Analizar el comportamiento de las ventas para identificar los productos con mayo
 - Evolución mensual de los ingresos.
 - Ranking de productos por ingresos.
 
-## 📊 Resultados principales
+## Resultados principales
 
 El análisis se realizó con un conjunto de datos ficticios de 10 operaciones comerciales.
 
@@ -38,7 +38,7 @@ El análisis se realizó con un conjunto de datos ficticios de 10 operaciones co
 
 Los ingresos representan el importe de las ventas, no la utilidad neta del negocio.
 
-## 📉 Visualizaciones
+## Visualizaciones
 
 ### Ingresos por producto
 
@@ -52,7 +52,7 @@ Los ingresos representan el importe de las ventas, no la utilidad neta del negoc
 
 ![Ingresos por vendedor](reports/ingresos_por_vendedor.png)
 
-## 📁 Estructura del proyecto
+## Estructura del proyecto
 
 ```text
 sales-data-analysis/
@@ -68,7 +68,7 @@ sales-data-analysis/
 └── README.md
 ```
 
-## ⚙️ Instalación y ejecución
+## Instalación y ejecución
 
 Requisitos: Python 3.10 o superior.
 
@@ -86,11 +86,11 @@ Requisitos: Python 3.10 o superior.
 
 El programa procesa los datos y genera reportes CSV, Excel y gráficas dentro de la carpeta `reports/`.
 
-## 📝 Datos
+## Datos
 
 Los registros son ficticios y se utilizan exclusivamente con fines educativos y de demostración.
 
-## 👨‍💻 Autor
+## Autor
 
 **Carlos Villanueva**
 
