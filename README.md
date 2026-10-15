@@ -1,70 +1,97 @@
+# Sales Data Analysis 📊
 
-# Sales Data Analysis
+Proyecto de análisis de datos desarrollado con Python para transformar registros de ventas en indicadores comerciales y reportes visuales.
 
-Proyecto de análisis de ventas desarrollado en Python para
-procesar datos ficticios de una empresa de tecnología agrícola.
+## 🎯 Objetivo
 
-## Objetivo
+Analizar el comportamiento de las ventas para identificar los productos con mayores ingresos, comparar el desempeño comercial por vendedor y evaluar la evolución mensual.
 
-Transformar registros de ventas en indicadores útiles para
-la toma de decisiones comerciales.
+## 🛠️ Tecnologías utilizadas
 
-## Tecnologías
+- **Python:** procesamiento y análisis de datos.
+- **CSV:** lectura de registros de ventas.
+- **Pandas:** no utilizado en esta versión.
+- **Matplotlib:** visualización de datos.
+- **OpenPyXL:** generación de reportes de Excel.
+- **Git y GitHub:** control de versiones y publicación del proyecto.
 
-- Python
-- CSV
-- openpyxl
-- Excel
-- Visual Studio Code
+## 📈 Indicadores del análisis
 
-## Funcionalidades
+- Ingresos totales registrados.
+- Ingresos por producto.
+- Ingresos y operaciones por vendedor.
+- Unidades vendidas.
+- Evolución mensual de los ingresos.
+- Ranking de productos por ingresos.
 
-- Lectura de datos desde archivos CSV.
-- Cálculo de ingresos por operación.
-- Análisis y ranking de productos.
-- Comparación de ingresos por vendedor.
-- Análisis mensual de ventas.
-- Generación de un resumen ejecutivo.
-- Exportación de resultados a CSV y Excel.
+## 📊 Resultados principales
 
-## Estructura del proyecto
+El análisis se realizó con un conjunto de datos ficticios de 10 operaciones comerciales.
 
-- `analysis.py`: código del análisis.
-- `data/ventas.csv`: datos de entrada.
-- `reports/`: reportes generados.
-- `requirements.txt`: dependencias.
-- `.gitignore`: archivos excluidos de Git.
+| Indicador | Resultado |
+|---|---:|
+| Ingresos registrados | $1,586,500 |
+| Operaciones | 10 |
+| Unidades vendidas | 38 |
+| Producto con mayores ingresos | Dron T25P |
+| Vendedor con mayores ingresos | Carlos |
 
-## Requisitos
+Los ingresos representan el importe de las ventas, no la utilidad neta del negocio.
 
-- Python 3.10 o superior.
-- pip.
+## 📉 Visualizaciones
 
-## Instalación
+### Ingresos por producto
 
-Clona o descarga el repositorio y abre una terminal
-en la carpeta principal del proyecto.
+![Ingresos por producto](reports/ingresos_por_producto.png)
 
-Instala las dependencias:
+### Evolución mensual de ingresos
 
-```bash
-python -m pip install -r requirements.txt
+![Evolución mensual](reports/ingresos_mensuales.png)
+
+### Ingresos por vendedor
+
+![Ingresos por vendedor](reports/ingresos_por_vendedor.png)
+
+## 📁 Estructura del proyecto
+
+```text
+sales-data-analysis/
+├── data/
+│   └── ventas.csv
+├── reports/
+│   ├── ingresos_por_producto.png
+│   ├── ingresos_mensuales.png
+│   └── ingresos_por_vendedor.png
+├── analysis.py
+├── requirements.txt
+├── .gitignore
+└── README.md
 ```
 
-## Ejecución
+## ⚙️ Instalación y ejecución
 
-Ejecuta:
+Requisitos: Python 3.10 o superior.
 
-```bash
-python analysis.py
-```
+1. Instalar las dependencias:
 
-El programa procesa los datos y genera reportes CSV y Excel
-dentro de la carpeta `reports/`.
+   ```bash
+   python -m pip install -r requirements.txt
+   ```
 
-## Datos
+2. Ejecutar el análisis:
 
-Los registros utilizados son ficticios y tienen fines educativos.
+   ```bash
+   python analysis.py
+   ```
 
-## Autor
-Carlos Villanueva
+El programa procesa los datos y genera reportes CSV, Excel y gráficas dentro de la carpeta `reports/`.
+
+## 📝 Datos
+
+Los registros son ficticios y se utilizan exclusivamente con fines educativos y de demostración.
+
+## 👨‍💻 Autor
+
+**Carlos Villanueva**
+
+Proyecto de portafolio orientado al análisis de datos, automatización de reportes y visualización de indicadores comerciales.
